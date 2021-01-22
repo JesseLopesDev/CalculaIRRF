@@ -1,0 +1,36 @@
+.input-informations {
+  width: 100%;
+  height: 4.5rem;
+  background-color: var(--termtiary-darkgrey-color);
+  color: var(--white-color);
+  border: 0.2rem solid var(--white-color);
+  outline: none;
+  padding-left: 1rem;
+  margin: 1rem 0 2rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+}
+
+.input-informations::placeholder {
+  color: var(--primary-darkgrey-color);
+}
+
+.input-informations:focus {
+  color: var(--primary-darkgrey-color);
+  border: 0.2rem solid var(--primary-darkgrey-color);
+}
+
+.clear-values {
+  margin-bottom: 2rem;
+}
+
+.calculate {
+  background-color: var(--unsaturated-green-color);
+  color: var(--white-color);
+}
+
+.calculate:hover,
+.calculate:focus {
+  background-color: var(--saturated-green-color);
+  color: var(--white-color);
+}

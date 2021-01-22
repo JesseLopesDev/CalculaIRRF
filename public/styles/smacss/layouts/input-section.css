@@ -1,0 +1,34 @@
+.l-main_content {
+  width: 80%;
+  margin: 6rem auto;
+}
+
+@media screen and (min-width: 426px) {
+  .l-main_content {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 626px) {
+  .l-main_content {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 826px) {
+  .l-main_content {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .l-main_content {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1226px) {
+  .l-main_content {
+    width: 25%;
+  }
+}

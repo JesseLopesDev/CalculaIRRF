@@ -1,0 +1,21 @@
+.l-input_form > label,
+.l-results_section > p {
+  font-size: 1.4rem;
+  color: var(--white-color);
+}
+
+.l-input_section h1,
+.l-results_section h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-bottom: 6rem;
+}
+
+.l-dividing_line {
+  width: 50%;
+  margin: 6rem auto;
+  border-bottom: 0.2rem solid var(--white-color);
+}

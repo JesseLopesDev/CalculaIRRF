@@ -1,0 +1,28 @@
+.clear-values,
+.calculate,
+.clear-results {
+  width: 100%;
+  height: 4.5rem;
+  border: none;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.clear-values,
+.clear-results {
+  background-color: var(--white-color);
+  color: var(--tertiary-darkgrey-color);
+}
+
+.clear-values:hover,
+.clear-values:focus,
+.clear-results:hover,
+.clear-results:focus {
+  background-color: var(--secondary-darkgrey-color);
+  color: var(--white-color);
+}

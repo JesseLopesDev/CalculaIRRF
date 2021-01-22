@@ -1,0 +1,7 @@
+.is-deducted_value {
+  color: var(--unsaturated-red-color);
+}
+
+.is-final_value {
+  color: var(--unsaturated-green-color);
+}

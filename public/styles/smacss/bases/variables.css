@@ -1,0 +1,11 @@
+:root {
+  --white-color: #fff;
+  --primary-darkgrey-color: #717171;
+  --secondary-darkgrey-color: #333;
+  --tertiary-darkgrey-color: #222;
+  --unsaturated-red-color: #d85151;
+  --unsaturated-green-color: #49b675;
+  --saturated-green-color: #118440;
+
+  font-size: 62.5%;
+}

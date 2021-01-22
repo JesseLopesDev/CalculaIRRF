@@ -1,0 +1,17 @@
+.is-invalid_input {
+  border: 0.2rem solid var(--unsaturated-red-color);
+  transition: .2s;
+}
+
+.is-invalid_input:focus {
+  border: 0.2rem solid var(--unsaturated-red-color);
+  color: var(--unsaturated-red-color);
+}
+
+.is-invalid_value {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--unsaturated-red-color);
+  margin: -1rem 0 2rem 0;
+  transition: .2s;
+}
