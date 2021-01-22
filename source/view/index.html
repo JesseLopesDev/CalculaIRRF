@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calcula IRRF</title>
+
+    <link rel="stylesheet" href="./../../public/styles/smacss/bases/variables.css">
+    <link rel="stylesheet" href="./../../public/styles/smacss/bases/reset.css">
+    <link rel="stylesheet" href="./../../public/styles/smacss/layouts/sections.css">
+    <link rel="stylesheet" href="./../../public/styles/smacss/layouts/input-section.css">
+    <link rel="stylesheet" href="./../../public/styles/smacss/layouts/results-section.css">
+    <link rel="stylesheet" href="./../../public/styles/smacss/modules/modules.css">
+    <link rel="stylesheet" href="./../../public/styles/smacss/modules/form.css">
+    <link rel="stylesheet" href="./../../public/styles/smacss/modules/results.css">
+    <link rel="stylesheet" href="./../../public/styles/smacss/states/error-messages.css">
+    <link rel="stylesheet" href="./../../public/styles/smacss/states/values-output-colors.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <main class="l-main_content">
+      <section class="l-input_section">
+        <h1>Calcula IRRF</h1>
+
+        <form class="l-input_form">
+          <label for="gross-salary">Salário bruto:</label>
+          <input
+            type="text"
+            class="input-informations"
+            id="gross-salary"
+            name="gross-salary"
+            autocomplete="off"
+            placeholder="Ex.: 0.00"
+            onkeypress="deleteErrorMessages()"
+          />
+
+          <span class="is-error_messages"></span>
+
+          <label for="dependents">Dependentes:</labelass=>
+          <input
+            type="text"
+            class="input-informations"
+            id="dependents"
+            name="dependents"
+            autocomplete="off"
+            placeholder="Ex.: 0"
+            onkeypress="deleteErrorMessages()"
+          />
+
+          <span class="is-error_messages"></span>
+
+          <label for="deductions">Outras deduções:</labelclass=>
+          <input
+            type="text"
+            class="input-informations"
+            id="deductions"
+            name="deductions"
+            autocomplete="off"
+            placeholder="Ex.: 0.00"
+            onkeypress="deleteErrorMessages()"
+          />
+
+          <span class="is-error_messages"></span>
+
+          <button type="reset" class="clear-values">
+            Limpar
+          </button>
+
+          <button class="calculate">
+            Calcular
+          </button>
+        </form>
+      </section>
+
+      <div class="l-dividing_line"></div>
+
+      <section class="l-results_section">
+        <h1>Resultados</h1>
+
+        <p>Dedução dos dependentes:</p>
+
+        <div class="l-results_container">
+          <span class="output-results" id="dependents-deduction">0.00</span>
+        </div>
+
+        <p>Outras deduções:</p>
+
+        <div class="l-results_container">
+          <span class="output-results" id="others-deductions">0.00</span>
+        </div>
+
+        <p>Dedução do INSS:</p>
+
+        <div class="l-results_container">
+          <span class="output-results" id="inss-deduction">0.00</span>
+        </div>
+
+        <p>Dedução do IRRF:</p>
+
+        <div class="l-results_container">
+          <span class="output-results" id="irrf-deduction">0.00</span>
+        </div>
+
+        <p>Salário líquido:</p>
+
+        <div class="l-results_container">
+          <span class="output-results" id="net-salary">0.00</span>
+        </div>
+
+        <button class="clear-results">
+          Limpar
+        </button>
+      </section>
+    </main>
+
+    <script src="./../../public/scripts/validates-form.js"></script>
+    <script src="./../../public/scripts/calculates-values.js"></script>
+    <script src="./../../public/scripts/add-output-colors.js"></script>
+    <script src="./../../public/scripts/clean-results.js"></script>
+  </body>
+</html>
